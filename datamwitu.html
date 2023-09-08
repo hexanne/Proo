@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<style type="text/css">
+body {
+background:white;
+color:magenta;
+}
+
+header {
+text-align:center;
+}
+
+h2 {
+color:lime;
+}
+
+span {
+float: right;
+}
+
+button {
+width:2in;
+border:2px solid red;
+border-radius:23px;
+color:cyan;
+margin:13px;
+font-size:26px;
+box-shadow:2px 2px 12px 2px  red;
+background:purple;
+padding:18px;
+}
+
+#main {
+text-align:center;
+}
+
+.deals {
+box-shadow:2px 2px 12px 2px red;
+color:magenta;
+border-radius:23px;
+padding:23px;
+border:2px solid red;
+}
+
+button:hover {
+width:3in;
+margin:13px;
+border:2px solid purple;
+border-radius:23px;
+color:red;
+font-size:26px;
+box-shadow:2px 2px 12px 2px  purple;
+background:cyan;
+padding:23px;
+}
+
+#one, #two, #three ,#four ,#five,#done, #end {
+display:none;
+}
+
+input {
+font-size:26px;
+padding:12px;
+text-align:center;
+border-radius:23px;
+background:cyan;
+margin-top:22px;
+border-right:2px solid red;
+border-left:2px solid red;
+border-bottom:2px solid red;
+border-top:none;
+width:3in;
+}
+
+::placeholder  {
+color:red;
+}
+
+hr {
+background:red;
+}
+</style>
+<script type="text/javascript">
+function dai() {
+main.style.display = "none";
+one.style.display = "block";
+};
+function pla() {
+main.style.display = "none";
+two.style.display = "block";
+};
+function min() {
+main.style.display = "none";
+three.style.display = "block";
+};
+function mon() {
+main.style.display = "none";
+four.style.display = "block";
+};
+function prem() {
+main.style.display = "none";
+five.style.display = "block";
+};
+function home() {
+one.style.display = "none";
+five.style.display = "none";
+two.style.display = "none";
+three.style.display = "none";
+four.style.display = "none";
+main.style.display = "block";
+};
+function next() {
+one.style.display = "none";
+five.style.display = "none";
+two.style.display = "none";
+three.style.display = "none";
+four.style.display = "none";
+main.style.display = "none";
+end.style.display = "block";
+var a = document.getElementById("amnt").value;
+document.getElementById("amnt2").innerHTML = a;
+};
+function okay() {
+var b = document.getElementById("phne").value;
+document.getElementById("phne2").innerHTML = b;
+end.style.display = "none";
+done.style.display = "block";
+}
+</script>
+<body>
+   <header>
+		<h1>Digitek Solutions Kenya </h1>
+         <p>Get amazing data at affordable prices</p> 
+         <p>Kindly deposit the amount you wish to spend before purchasing the offers</p> 
+         </header>
+ 	<div id="main" >
+    <div class="deals" >
+	<h2>Packages</h2>
+	<button onclick="dai()">Daily Data</button>
+	<button onclick="pla()">Platinum Data</button>
+	<button onclick="min()">Minutes</button>
+	<button onclick="mon()">Monthly Data</button>
+	<button onclick="prem()">Premium Data</button>
+	</div>
+	</div>
+
+        <div id="one" > 
+    	<div class="deals" >
+        <h3>DAILY DATA <span>ALL NETWORK</b></span></h3>
+         <h2>DATA BUNDLE<span> <b>PRICE</b></span></h2>  
+        <p><b>5GB</b> <span><b>  Kshs 50.00</b></span></p> 
+        <p><b>10GB</b> <span><b>Kshs 100.00</b></span></p> 
+        <p><b>20GB</b> <span><b>Kshs 200.00</b></span></p> 
+        <p><b>50GB</b> <span><b>Kshs 400.00</b></span></p> 
+ 		<hr>
+ 		<h3>Payment</h3>
+ 		<label>Amount</label><br>
+ 		<input type="number" id="amnt"  placeholder="Enter Amount to spend" > 
+ 		<button onclick="next()">Continue</button>
+ 		<button onclick="home()">Back</button>
+        </div> 
+         </div>
+
+        <div id="two" > 
+		<div class="deals" >
+        <h2>PLATINUM OFFER<span>NO EXPIRY</b></span></h2> 
+        <p><b>10GB plus 1500minutes</b> <span><b> Kshs 200.00</b></span></p> 
+        <p><b>20GB plus 1500minutes</b> <span><b> Kshs 300.00</b></span></p> 
+        <p><b>30GB plus 1500minutes</b> <span><b> Kshs 400.00</b></span></p> 
+        <p><b>40GB plus 1500minutes</b> <span><b> Kshs 600.00</b></span></p> 
+        <p><b>50GB plus 1500minutes</b> <span><b> Kshs 750.00</b></span></p> 
+        <p><b>60GB plus 1500minutes</b> <span><b> Kshs 800.00</b></span></p> 
+        <p><b>70GB plus 1500minutes</b> <span><b> Kshs 900.00</b></span></p> 
+        <p><b>80GB plus 1500minutes</b> <span><b>Kshs 1100.00</b></span></p> 
+ 		<hr>
+ 		<h3>Payment</h3>
+ 		<label>Amount</label><br>
+ 		<input type="number" id="amnt"  placeholder="Enter Amount to spend" > 
+ 		<button onclick="next()">Continue</button>
+ 		<button onclick="home()">Back</button>
+        </div>
+ 		</div>
+ 
+         <div id="three"> 
+        <div class="deals" >
+        <h2>MINUTES <span>NO EXPIRY</b></span></h2> 
+        <p><b> 500 minutes</b> <span><b>Kshs 100.00</b></span></p> 
+        <p><b>1000 minutes</b> <span><b>Kshs 200.00</b></span></p> 
+        <p><b>1500 minutes</b> <span><b>Kshs 300.00</b></span></p> 
+        <p><b>2000 minutes</b> <span><b>Kshs 400.00</b></span></p> 
+        <p><b>2500 minutes</b> <span><b>Kshs 500.00</b></span></p> 
+        <p><b>3000 minutes</b> <span><b>Kshs 600.00</b></span></p> 
+        <p><b>4500 minutes</b> <span><b>Kshs 700.00</b></span></p> 
+        <p><b>5000 minutes</b> <span><b>Kshs 800.00</b></span></p> 
+ 		<hr>
+ 		<h3>Payment</h3>
+ 		<label>Amount</label><br>
+ 		<input type="number" id="amnt"  placeholder="Enter Amount to spend" > 
+ 		<button onclick="next()">Continue</button>
+ 		<button onclick="home()">Back</button>
+        </div> 
+ 		</div>
+ 
+         <div id="four" > 
+ 		<div class="deals" >
+        <h2>MONTHLY DAA <span>30 DAYS</b></span></h2> 
+        <p><b>10GB</b> <span><b>Kshs 200.00</b></span></p> 
+        <p><b>12GB</b> <span><b>Kshs 240.00</b></span></p> 
+        <p><b>14GB</b> <span><b>Kshs 280.00</b></span></p> 
+        <p><b>16GB</b> <span><b>Kshs 320.00</b></span></p> 
+        <p><b>18GB</b> <span><b>Kshs 360.00</b></span></p> 
+        <p><b>20GB</b> <span><b>Kshs 400.00</b></span></p> 
+        <p><b>22GB</b> <span><b>Kshs 440.00</b></span></p> 
+        <p><b>24GB</b> <span><b>Kshs 580.00</b></span></p> 
+         <hr>
+ 		 <h3>Payment</h3>
+ 		<label>Amount</label><br>
+ 		<input type="number" id="amnt"  placeholder="Enter Amount to spend" > 
+ 		<button onclick="next()">Continue</button>
+ 		<button onclick="home()">Back</button>       </div> 
+ 		</div>
+ 		
+        <div id="five"> 
+        <div class="deals" >
+        <h2>PREMIUM DATA <span>NO EXPIRY</b></span></h2> 
+        <p><b> 90GB</b> <span><b>Kshs 1200.00</b></span></p> 
+        <p><b>100GB</b> <span><b>Kshs 1400.00</b></span></p> 
+        <p><b>120GB</b> <span><b>Kshs 1600.00</b></span></p> 
+        <p><b>150GB</b> <span><b>Kshs 1800.00</b></span></p>
+		 <hr>
+		 <h3>Payment</h3>
+ 		<label>Amount</label><br>
+ 		<input type="number" id="amnt"  placeholder="Enter Amount to spend" > 
+ 		<button onclick="next()">Continue</button>
+ 		<button onclick="home()">Back</button>
+        </div>
+         </div>
+          
+          <div id="end" >
+          <div class="deals" >
+         <h2>Payment</h2>
+         <label>Enter the number to receive the data </label>
+         <input type="tel" id="phne" placeholder="Phone number" >
+       <button onclick="okay()">next</button>
+          </div>
+          </div>
+          
+          <div id="done" >
+          <div class="deals" >
+          <h2>Confirm </h2>
+          <p>You are about to pay <b id="amnt2"> </b> for  <b id="phne2" ></b> </p>
+          <button onclick="">Finish</button>
+          </div>
+          </div>
+         
+</body>
+</html>
